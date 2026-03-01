@@ -1,0 +1,15 @@
+﻿{
+  "ownerId": "seph1709",
+  "slug": "facebook-page",
+  "version": "1.0.8",
+  "publishedAt": "2026-03-01T04:40:00Z",
+  "requiredEnvVars": [],
+  "requiredConfigPaths": ["~/.config/fb-page/credentials.json"],
+  "primaryCredential": {
+    "type": "file",
+    "path": "~/.config/fb-page/credentials.json",
+    "fields": ["FB_PAGE_TOKEN", "FB_PAGE_ID", "FB_APP_ID", "FB_APP_SECRET"],
+    "sensitive": true,
+    "notes": "FB_PAGE_TOKEN and FB_PAGE_ID used for all API calls. FB_APP_ID and FB_APP_SECRET only needed during one-time token exchange. All calls go to graph.facebook.com only."
+  }
+}
