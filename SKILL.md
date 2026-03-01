@@ -184,6 +184,9 @@ try {
 - **Always load credentials first.** If missing or incomplete, guide setup.
 - **Only use `FB_PAGE_TOKEN` and `FB_PAGE_ID`** for API calls. `FB_APP_ID` and `FB_APP_SECRET` are for token exchange only.
 - **Never write extra fields** to the credentials file (no owner IDs, conv IDs, or third-party keys).
+- **Remove FB_APP_SECRET** from credentials.json after token exchange — it is not needed for API calls.
+- **Least-privilege:** only request the permissions your use case needs. Do not request `pages_manage_ads` or `pages_manage_instant_articles` unless explicitly needed.
+- **Rotate FB_PAGE_TOKEN** periodically via Graph API Explorer, and immediately if the host is ever compromised.
 - **All API calls go to `graph.facebook.com` only.** No external forwarding, no third-party services.
 - **Construct API calls inline** from user intent — don't look for script files.
 - **On any error:** parse `error.code` + `error.error_subcode`, map to the table above, tell the user exactly what to do.
