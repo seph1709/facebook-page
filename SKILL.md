@@ -1,6 +1,6 @@
 ﻿---
 name: facebook-page
-description: Interact with any Facebook Page feature via the Meta Graph API. Use when the user wants to post, schedule, delete, reply, read inbox, check insights, manage events, upload videos, moderate comments, or do anything with their Facebook Page. Not limited to preset commands - the agent figures out the right API call from what the user wants. If a permission is missing, the agent tells the user exactly which permission to add and where.
+description: "Interact with any Facebook Page feature via the Meta Graph API (graph.facebook.com only). Use when the user wants to post, schedule, delete, reply, read inbox, check insights, manage events, upload videos, moderate comments, or do anything with their Facebook Page. Requires credentials file at ~/.config/fb-page/credentials.json with FB_PAGE_TOKEN and FB_PAGE_ID (one-time OAuth2 setup). FB_APP_SECRET is for setup only — delete it from credentials.json afterward. FB_PAGE_TOKEN is long-lived; rotate it periodically and immediately if the host is compromised. No data forwarded to third parties."
 metadata: {"openclaw":{"emoji":"[fb]"}}
 
 
