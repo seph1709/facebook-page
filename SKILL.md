@@ -1,7 +1,7 @@
 ﻿---
 name: facebook-page
 description: Interact with any Facebook Page feature via the Meta Graph API. Use when the user wants to post, schedule, delete, reply, read inbox, check insights, manage events, upload videos, moderate comments, or do anything with their Facebook Page. Not limited to preset commands - the agent figures out the right API call from what the user wants. If a permission is missing, the agent tells the user exactly which permission to add and where.
-metadata: {"openclaw":{"emoji":"[fb]","always":true}}
+metadata: {"openclaw":{"emoji":"[fb]"}}
 
 
 # facebook-page — Universal Meta Graph API Skill
